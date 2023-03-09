@@ -2,20 +2,20 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: decidim_users
+    description: "Model gathering all informations concerning Decidim users"
     columns:
       - name: id
-        description: "The primary key for this table"
+        description: "The primary key for the users"
         tests:
           - unique
           - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+  # - name: my_second_dbt_model
+  #   description: "A starter dbt model"
+  #   columns:
+  #     - name: id
+  #       description: "The primary key for the users"
+  #       tests:
+  #         - unique
+  #         - not_null
