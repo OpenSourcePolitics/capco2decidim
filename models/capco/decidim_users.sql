@@ -12,6 +12,14 @@
 with fos_users as (
     select *
     from "capco"."fos_user"
+),
+user_following as (
+    select *
+    from "capco"."user_following"
+),
+user_connection as (
+    select *
+    from "capco"."user_connection"
 )
 
 
